@@ -1,0 +1,120 @@
+button{
+  display:block;
+}
+
+#myimg{
+  display:block;
+  width:200px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    width:fit-content;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    width:100px;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  li a#test {
+    background-color: royalblue;
+  }
+
+  li a#test:hover:not(.active) {
+    background-color: rgb(41, 66, 143);
+  }
+
+
+  .active {
+    background-color: #4CAF50;
+  }
+
+  nav{
+      position: fixed;
+      left:500px;
+      top:0;
+      width:fit-content;
+  }
+
+  
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  display: inline-block;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: rgb(243, 222, 35);
+  color: black;
+  border: 2px solid black;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 12px;
+  padding:auto 0;
+}
+
+.flip-box-back {
+  background-color:black;
+  color: white;
+  transform: rotateY(180deg);
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+.flip-box h2{
+  width:90%;
+  line-height: 150px;
+}
+
+#Morebutton{
+  display:inline;
+}
+
+p.tip{
+  font-size: 4px;
+  font-style: italic;
+}
