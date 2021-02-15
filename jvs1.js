@@ -3,7 +3,7 @@ const imgbutton = document.getElementById("imgswitch");
 const cards = document.querySelectorAll(".flip-box-front");
 const colorbutton = document.getElementById("colorswitch");
 const morebutton=document.getElementById("Morebutton");
-const more=document.getElementById("more")
+const aboutme=document.getElementById("aboutme")
 
 
 function changeimg(){
@@ -32,13 +32,17 @@ colorbutton.addEventListener("click",()=>{
 
 })
 
-morebutton.addEventListener(("click"),()=>{
-  if (more.innerHTML==""){
-    more.innerHTML="Venmo me to know more."
-    morebutton.innerHTML="No thanks"
-  }else{
-    more.innerHTML=""
-    morebutton.innerHTML="More about me"
-  }
 
-})
+morebutton.addEventListener(("click"),()=>{
+    if (morebutton.innerHTML=="More about me"){
+      const more = document.createElement("p"); 
+      more.innerHTML = "There's nothing more."; 
+      more.id="toremove"
+      morebutton.innerHTML="That's enough"
+      aboutme.appendChild(more);
+    }else{
+      const toremove = document.getElementById("toremove")
+      toremove.remove()
+      morebutton.innerHTML="More about me"
+    }
+  })

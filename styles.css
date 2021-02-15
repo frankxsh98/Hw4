@@ -114,7 +114,7 @@ ul {
   display:inline;
 }
 
-p.tip{
+p#toremove{
   font-size: 4px;
   font-style: italic;
 }
